@@ -6,3 +6,7 @@ Simple script to sracpe texts embedded within a certain tag and concatenate them
 
 ### Matplotlib Utils
 Several script templates I find useful in daily use to plot good-looking figures that satiate basic needs.
+
+
+### Trivials
+Other hard-to-categorize codes I write for fun or to assist understanding of course contents or significant algorithms.
