@@ -1,0 +1,18 @@
+# configurations
+
+GLOBAL:
+  url: "https:/<1-WEBSITE-URL-AND-SPECIFICATIONS>/<2-NOVEL-ID>/{}.html"
+    # 1: url of the target websire
+    # 2: novel specifier
+  start: <STARTING-PAGE-NUMBER>
+  pages: <COUNT-OF-PAGES-TO-BE-COVERED>
+    # these 2 make up the number to fill in the bracket above in url
+
+WEB:
+  key: "id"
+    # class, id, etc. Inspect the webpage for details
+  val: "body"
+    # same as above, "body" here is just an example
+
+OUT: "output.txt"
+    # name of the output .txt file

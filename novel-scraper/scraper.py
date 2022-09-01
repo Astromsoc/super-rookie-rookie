@@ -67,7 +67,6 @@ def main(args):
                     configs['WEB']
             )
         )
-        print(type(full_results[-1]))
     
     # write to file
     with open(out_path, 'w') as f:
@@ -82,6 +81,7 @@ if __name__ == '__main__':
         '--config_file',
         type=str,
         help='path to config file',
+        default='configs.yml'
     )
 
     parser.add_argument(
