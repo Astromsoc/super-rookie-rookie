@@ -1,0 +1,420 @@
+
+[Reference]:  hdjakhdjks
+[Hypothesis]: dajdjksanjksa
+
+[REF]\[HYP]         d   a   j   d   j   k   s   a   n   j   k   s   a
+             --------------------------------------------------------
+            |   0   1   2   3   4   5   6   7   8   9  10  11  12  13
+          h |   1   1   2   3   4   5   6   7   8   9  10  11  12  13
+          d |   2   1   2   3   3   4   5   6   7   8   9  10  11  12
+          j |   3   2   2   2   3   3   4   5   6   7   8   9  10  11
+          a |   4   3   2   3   3   4   4   5   5   6   7   8   9  10
+          k |   5   4   3   3   4   4   4   5   6   6   7   7   8   9
+          h |   6   5   4   4   4   5   5   5   6   7   7   8   8   9
+          d |   7   6   5   5   4   5   6   6   6   7   8   8   9   9
+          j |   8   7   6   5   5   4   5   6   7   7   7   8   9  10
+          k |   9   8   7   6   6   5   4   5   6   7   8   7   8   9
+          s |  10   9   8   7   7   6   5   4   5   6   7   8   7   8
+
+Edit Distance: 8
+Character Error Rate: 80.0000%
+
+Error Path # 1:
+[REF]: h   #   #   d   j   a   k   h   d   #   j   k   s   #
+[HYP]: d   a   j   d   j   #   k   s   a   n   j   k   s   a
+[ERR]: S   I   I           D       S   S   I               I
+
+Error Path # 2:
+[REF]: #   h   #   d   j   a   k   h   d   #   j   k   s   #
+[HYP]: d   a   j   d   j   #   k   s   a   n   j   k   s   a
+[ERR]: I   S   I           D       S   S   I               I
+
+Error Path # 3:
+[REF]: #   #   h   d   j   a   k   h   d   #   j   k   s   #
+[HYP]: d   a   j   d   j   #   k   s   a   n   j   k   s   a
+[ERR]: I   I   S           D       S   S   I               I
+
+Error Path # 4:
+[REF]: h   d   #   j   a   #   k   h   d   #   j   k   s   #
+[HYP]: #   d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: D       I       S   I       S   S   I               I
+
+Error Path # 5:
+[REF]: h   d   j   a   #   k   h   d   #   j   k   s   #
+[HYP]: d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: S   S       S   I       S   S   I               I
+
+Error Path # 6:
+[REF]: h   d   #   j   #   a   k   h   d   #   j   k   s   #
+[HYP]: #   d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: D       I       I   S       S   S   I               I
+
+Error Path # 7:
+[REF]: h   d   j   #   a   k   h   d   #   j   k   s   #
+[HYP]: d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: S   S       I   S       S   S   I               I
+
+Error Path # 8:
+[REF]: h   #   #   d   j   a   k   h   #   d   j   k   s   #
+[HYP]: d   a   j   d   j   #   k   s   a   n   j   k   s   a
+[ERR]: S   I   I           D       S   I   S               I
+
+Error Path # 9:
+[REF]: #   h   #   d   j   a   k   h   #   d   j   k   s   #
+[HYP]: d   a   j   d   j   #   k   s   a   n   j   k   s   a
+[ERR]: I   S   I           D       S   I   S               I
+
+Error Path #10:
+[REF]: #   #   h   d   j   a   k   h   #   d   j   k   s   #
+[HYP]: d   a   j   d   j   #   k   s   a   n   j   k   s   a
+[ERR]: I   I   S           D       S   I   S               I
+
+Error Path #11:
+[REF]: h   d   #   j   a   #   k   h   #   d   j   k   s   #
+[HYP]: #   d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: D       I       S   I       S   I   S               I
+
+Error Path #12:
+[REF]: h   d   j   a   #   k   h   #   d   j   k   s   #
+[HYP]: d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: S   S       S   I       S   I   S               I
+
+Error Path #13:
+[REF]: h   d   #   j   #   a   k   h   #   d   j   k   s   #
+[HYP]: #   d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: D       I       I   S       S   I   S               I
+
+Error Path #14:
+[REF]: h   d   j   #   a   k   h   #   d   j   k   s   #
+[HYP]: d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: S   S       I   S       S   I   S               I
+
+Error Path #15:
+[REF]: h   #   #   d   j   a   k   #   h   d   j   k   s   #
+[HYP]: d   a   j   d   j   #   k   s   a   n   j   k   s   a
+[ERR]: S   I   I           D       I   S   S               I
+
+Error Path #16:
+[REF]: #   h   #   d   j   a   k   #   h   d   j   k   s   #
+[HYP]: d   a   j   d   j   #   k   s   a   n   j   k   s   a
+[ERR]: I   S   I           D       I   S   S               I
+
+Error Path #17:
+[REF]: #   #   h   d   j   a   k   #   h   d   j   k   s   #
+[HYP]: d   a   j   d   j   #   k   s   a   n   j   k   s   a
+[ERR]: I   I   S           D       I   S   S               I
+
+Error Path #18:
+[REF]: h   d   #   j   a   #   k   #   h   d   j   k   s   #
+[HYP]: #   d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: D       I       S   I       I   S   S               I
+
+Error Path #19:
+[REF]: h   d   j   a   #   k   #   h   d   j   k   s   #
+[HYP]: d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: S   S       S   I       I   S   S               I
+
+Error Path #20:
+[REF]: h   d   #   j   #   a   k   #   h   d   j   k   s   #
+[HYP]: #   d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: D       I       I   S       I   S   S               I
+
+Error Path #21:
+[REF]: h   d   j   #   a   k   #   h   d   j   k   s   #
+[HYP]: d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: S   S       I   S       I   S   S               I
+
+Error Path #22:
+[REF]: h   #   #   d   j   a   k   h   d   j   k   s   #
+[HYP]: d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: S   I   I           S   S   S   S               I
+
+Error Path #23:
+[REF]: #   h   #   d   j   a   k   h   d   j   k   s   #
+[HYP]: d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: I   S   I           S   S   S   S               I
+
+Error Path #24:
+[REF]: #   #   h   d   j   a   k   h   d   j   k   s   #
+[HYP]: d   a   j   d   j   k   s   a   n   j   k   s   a
+[ERR]: I   I   S           S   S   S   S               I
+
+
+[Reference]:  i want to go to the cmu campus
+[Hypothesis]: i want to go to i want to go to i want to go to the cmu campus
+
+[REF]\[HYP]               i   want     to     go     to      i   want     to     go     to      i   want     to     go     to    the    cmu campus
+             -------------------------------------------------------------------------------------------------------------------------------------
+            |      0      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15     16     17     18
+          i |      1      0      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15     16     17
+       want |      2      1      0      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15     16
+         to |      3      2      1      0      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15
+         go |      4      3      2      1      0      1      2      3      4      5      6      7      8      9     10     11     12     13     14
+         to |      5      4      3      2      1      0      1      2      3      4      5      6      7      8      9     10     11     12     13
+        the |      6      5      4      3      2      1      1      2      3      4      5      6      7      8      9     10     10     11     12
+        cmu |      7      6      5      4      3      2      2      2      3      4      5      6      7      8      9     10     11     10     11
+     campus |      8      7      6      5      4      3      3      3      3      4      5      6      7      8      9     10     11     11     10
+
+Edit Distance: 10
+Word Error Rate: 125.0000%
+
+Error Path # 1:
+[REF]: i   want   to   go   to   #   ####   ##   ##   ##   #   ####   ##   ##   ##   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:                           I      I    I    I    I   I      I    I    I    I                     
+
+Error Path # 2:
+[REF]: i   want   to   go   ##   #   ####   to   ##   ##   #   ####   ##   ##   ##   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:                       I   I      I         I    I   I      I    I    I    I                     
+
+Error Path # 3:
+[REF]: i   want   to   go   ##   #   ####   ##   ##   to   #   ####   ##   ##   ##   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:                       I   I      I    I    I        I      I    I    I    I                     
+
+Error Path # 4:
+[REF]: i   want   to   ##   ##   #   ####   ##   go   to   #   ####   ##   ##   ##   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:                  I    I   I      I    I             I      I    I    I    I                     
+
+Error Path # 5:
+[REF]: i   want   ##   ##   to   #   ####   ##   go   to   #   ####   ##   ##   ##   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:             I    I        I      I    I             I      I    I    I    I                     
+
+Error Path # 6:
+[REF]: i   want   ##   ##   ##   #   ####   to   go   to   #   ####   ##   ##   ##   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:             I    I    I   I      I                  I      I    I    I    I                     
+
+Error Path # 7:
+[REF]: i   ####   ##   ##   ##   #   want   to   go   to   #   ####   ##   ##   ##   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:        I    I    I    I   I                         I      I    I    I    I                     
+
+Error Path # 8:
+[REF]: #   ####   ##   ##   ##   i   want   to   go   to   #   ####   ##   ##   ##   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]: I      I    I    I    I                             I      I    I    I    I                     
+
+Error Path # 9:
+[REF]: i   want   to   go   ##   #   ####   ##   ##   ##   #   ####   to   ##   ##   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:                       I   I      I    I    I    I   I      I         I    I                     
+
+Error Path #10:
+[REF]: i   want   to   ##   ##   #   ####   ##   go   ##   #   ####   to   ##   ##   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:                  I    I   I      I    I         I   I      I         I    I                     
+
+Error Path #11:
+[REF]: i   want   ##   ##   to   #   ####   ##   go   ##   #   ####   to   ##   ##   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:             I    I        I      I    I         I   I      I         I    I                     
+
+Error Path #12:
+[REF]: i   want   ##   ##   ##   #   ####   to   go   ##   #   ####   to   ##   ##   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:             I    I    I   I      I              I   I      I         I    I                     
+
+Error Path #13:
+[REF]: i   ####   ##   ##   ##   #   want   to   go   ##   #   ####   to   ##   ##   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:        I    I    I    I   I                     I   I      I         I    I                     
+
+Error Path #14:
+[REF]: #   ####   ##   ##   ##   i   want   to   go   ##   #   ####   to   ##   ##   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]: I      I    I    I    I                         I   I      I         I    I                     
+
+Error Path #15:
+[REF]: i   want   to   go   ##   #   ####   ##   ##   ##   #   ####   ##   ##   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:                       I   I      I    I    I    I   I      I    I    I                          
+
+Error Path #16:
+[REF]: i   want   to   ##   ##   #   ####   ##   go   ##   #   ####   ##   ##   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:                  I    I   I      I    I         I   I      I    I    I                          
+
+Error Path #17:
+[REF]: i   want   ##   ##   to   #   ####   ##   go   ##   #   ####   ##   ##   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:             I    I        I      I    I         I   I      I    I    I                          
+
+Error Path #18:
+[REF]: i   want   ##   ##   ##   #   ####   to   go   ##   #   ####   ##   ##   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:             I    I    I   I      I              I   I      I    I    I                          
+
+Error Path #19:
+[REF]: i   ####   ##   ##   ##   #   want   to   go   ##   #   ####   ##   ##   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:        I    I    I    I   I                     I   I      I    I    I                          
+
+Error Path #20:
+[REF]: #   ####   ##   ##   ##   i   want   to   go   ##   #   ####   ##   ##   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]: I      I    I    I    I                         I   I      I    I    I                          
+
+Error Path #21:
+[REF]: i   want   to   ##   ##   #   ####   ##   ##   ##   #   ####   ##   go   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:                  I    I   I      I    I    I    I   I      I    I                               
+
+Error Path #22:
+[REF]: i   want   ##   ##   to   #   ####   ##   ##   ##   #   ####   ##   go   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:             I    I        I      I    I    I    I   I      I    I                               
+
+Error Path #23:
+[REF]: i   want   ##   ##   ##   #   ####   to   ##   ##   #   ####   ##   go   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:             I    I    I   I      I         I    I   I      I    I                               
+
+Error Path #24:
+[REF]: i   ####   ##   ##   ##   #   want   to   ##   ##   #   ####   ##   go   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:        I    I    I    I   I                I    I   I      I    I                               
+
+Error Path #25:
+[REF]: #   ####   ##   ##   ##   i   want   to   ##   ##   #   ####   ##   go   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]: I      I    I    I    I                    I    I   I      I    I                               
+
+Error Path #26:
+[REF]: i   want   ##   ##   ##   #   ####   ##   ##   to   #   ####   ##   go   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:             I    I    I   I      I    I    I        I      I    I                               
+
+Error Path #27:
+[REF]: i   ####   ##   ##   ##   #   want   ##   ##   to   #   ####   ##   go   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:        I    I    I    I   I           I    I        I      I    I                               
+
+Error Path #28:
+[REF]: #   ####   ##   ##   ##   i   want   ##   ##   to   #   ####   ##   go   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]: I      I    I    I    I               I    I        I      I    I                               
+
+Error Path #29:
+[REF]: i   want   ##   ##   ##   #   ####   ##   ##   ##   #   ####   to   go   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:             I    I    I   I      I    I    I    I   I      I                                    
+
+Error Path #30:
+[REF]: i   ####   ##   ##   ##   #   want   ##   ##   ##   #   ####   to   go   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:        I    I    I    I   I           I    I    I   I      I                                    
+
+Error Path #31:
+[REF]: #   ####   ##   ##   ##   i   want   ##   ##   ##   #   ####   to   go   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]: I      I    I    I    I               I    I    I   I      I                                    
+
+Error Path #32:
+[REF]: i   ####   ##   ##   ##   #   ####   ##   ##   ##   #   want   to   go   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]:        I    I    I    I   I      I    I    I    I   I                                           
+
+Error Path #33:
+[REF]: #   ####   ##   ##   ##   i   ####   ##   ##   ##   #   want   to   go   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]: I      I    I    I    I          I    I    I    I   I                                           
+
+Error Path #34:
+[REF]: #   ####   ##   ##   ##   #   ####   ##   ##   ##   i   want   to   go   to   the   cmu   campus
+[HYP]: i   want   to   go   to   i   want   to   go   to   i   want   to   go   to   the   cmu   campus
+[ERR]: I      I    I    I    I   I      I    I    I    I                                               
+
+
+[CER]
+
+Edit Distance: 3
+Character Error Rate: 13.0435%
+
+
+
+[WER]
+
+[Reference]:  s ae m ih z m ay d ao g
+[Hypothesis]: s ae m ih z m ay g aa d
+
+[REF]\[HYP]       s ae  m ih  z  m ay  g aa  d
+             ---------------------------------
+            |  0  1  2  3  4  5  6  7  8  9 10
+          s |  1  0  1  2  3  4  5  6  7  8  9
+         ae |  2  1  0  1  2  3  4  5  6  7  8
+          m |  3  2  1  0  1  2  3  4  5  6  7
+         ih |  4  3  2  1  0  1  2  3  4  5  6
+          z |  5  4  3  2  1  0  1  2  3  4  5
+          m |  6  5  4  3  2  1  0  1  2  3  4
+         ay |  7  6  5  4  3  2  1  0  1  2  3
+          d |  8  7  6  5  4  3  2  1  1  2  2
+         ao |  9  8  7  6  5  4  3  2  2  2  3
+          g | 10  9  8  7  6  5  4  3  2  3  3
+
+Edit Distance: 3
+Word Error Rate: 30.0000%
+
+Error Path # 1:
+[REF]: s   ae   m   ih   z   m   ay   d   ao   g
+[HYP]: s   ae   m   ih   z   m   ay   g   aa   d
+[ERR]:                                S    S   S
+
+
+[SER]
+
+Edit Distance: 1
+Sentence Error Rate: 100.0000%
+
+
+
+
+
+
+[CER]
+
+Edit Distance: 3
+Character Error Rate: 13.0435%
+
+
+
+[WER]
+
+[Reference]:  s ae m ih z m ay d ao g
+[Hypothesis]: s ae m z m ay d ao g
+
+[REF]\[HYP]       s ae  m  z  m ay  d ao  g
+             ------------------------------
+            |  0  1  2  3  4  5  6  7  8  9
+          s |  1  0  1  2  3  4  5  6  7  8
+         ae |  2  1  0  1  2  3  4  5  6  7
+          m |  3  2  1  0  1  2  3  4  5  6
+         ih |  4  3  2  1  1  2  3  4  5  6
+          z |  5  4  3  2  1  2  3  4  5  6
+          m |  6  5  4  3  2  1  2  3  4  5
+         ay |  7  6  5  4  3  2  1  2  3  4
+          d |  8  7  6  5  4  3  2  1  2  3
+         ao |  9  8  7  6  5  4  3  2  1  2
+          g | 10  9  8  7  6  5  4  3  2  1
+
+Edit Distance: 1
+Word Error Rate: 10.0000%
+
+Error Path # 1:
+[REF]: s   ae   m   ih   z   m   ay   d   ao   g
+[HYP]: s   ae   m   ##   z   m   ay   d   ao   g
+[ERR]:               D                          
+
+
+[SER]
+
+Edit Distance: 1
+Sentence Error Rate: 100.0000%
+
+
+
+
+

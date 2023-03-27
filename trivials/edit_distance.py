@@ -5,15 +5,13 @@
     Written by: 
         Astromsoc (schen4@andrew.cmu.edu)
     Last Updated at:
-        Sep 7, 2022
+        Mar 27, 2023
 
     ---
 
     Featuring:
         - controllable layout loose level
         - controllable display automation
-
-    Upcoming:
         - error path(s) reconstruction
 """
 
@@ -294,14 +292,18 @@ if __name__ == '__main__':
     """
     
     refs = [
-        "I want to go to the CMU campus",
-        "I went to see Bullet Train and it's definitely worth the ticket.",
-        "Det finns flera anledningar att inte äta kyckling."
+        # "I want to go to the CMU campus",
+        # "I went to see Bullet Train and it's definitely worth the ticket.",
+        # "Det finns flera anledningar att inte äta kyckling."
+        "S AE M . IH Z . M AY . D AO G .",
+        "S AE M . IH Z . M AY . D AO G ."
     ]
     hyps = [
-        "I want to go to the gym you can",
-        "I went to Sybil and Trey and it's definitely worth the ticket.",
-        "Det finns flera anledningar att du inte äta kyckling."
+        # "I want to go to the gym you can",
+        # "I went to Sybil and Trey and it's definitely worth the ticket.",
+        # "Det finns flera anledningar att du inte äta kyckling."
+        "S AE M . IH Z . M AY . G AA D .",
+        "S AE M . Z . M AY . D AO G ."
     ]
 
 

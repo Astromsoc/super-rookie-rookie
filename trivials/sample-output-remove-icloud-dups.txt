@@ -1,0 +1,20 @@
+
+
+### NOW CLEARING UP DIRECTORY: [/Users/astromsoc/Himitsu/super-rookie-rookie/trivials] ###
+
+[ SUCCESSFULLY DELETED ] File (/Users/astromsoc/Himitsu/super-rookie-rookie/trivials/other_test 2) has been deleted. Twin file (/Users/astromsoc/Himitsu/super-rookie-rookie/trivials/other_test 2) is kept.
+
+[ SUCCESSFULLY DELETED ] File (/Users/astromsoc/Himitsu/super-rookie-rookie/trivials/ctc_trellis 2.py) has been deleted. Twin file (/Users/astromsoc/Himitsu/super-rookie-rookie/trivials/ctc_trellis.py) is kept.
+
+[ SUCCESSFULLY DELETED ] File (/Users/astromsoc/Himitsu/super-rookie-rookie/trivials/sample-output-ctc-trellis 2.txt) has been deleted. Twin file (/Users/astromsoc/Himitsu/super-rookie-rookie/trivials/sample-output-ctc-trellis.txt) is kept.
+
+[ SUCCESSFULLY DELETED ] File (/Users/astromsoc/Himitsu/super-rookie-rookie/trivials/edit_distance 2.py) has been deleted. Twin file (/Users/astromsoc/Himitsu/super-rookie-rookie/trivials/edit_distance.py) is kept.
+
+[ SUCCESSFULLY DELETED ] File (/Users/astromsoc/Himitsu/super-rookie-rookie/trivials/sample-output-edit-distance 2.txt) has been deleted. Twin file (/Users/astromsoc/Himitsu/super-rookie-rookie/trivials/sample-output-edit-distance.txt) is kept.
+
+[ SUCCESSFULLY DELETED ] File (/Users/astromsoc/Himitsu/super-rookie-rookie/trivials/edit_distance_sample_result 2.png) has been deleted. Twin file (/Users/astromsoc/Himitsu/super-rookie-rookie/trivials/edit_distance_sample_result.png) is kept.
+
+[ SUCCESSFULLY DELETED ] File (/Users/astromsoc/Himitsu/super-rookie-rookie/trivials/remove_icloud_dups 2.py) has been deleted. Twin file (/Users/astromsoc/Himitsu/super-rookie-rookie/trivials/remove_icloud_dups.py) is kept.
+
+
+A total of [7] file(s) have been deleted.
