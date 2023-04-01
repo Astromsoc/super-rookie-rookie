@@ -4,7 +4,7 @@
     Written by: 
         Astromsoc (schen4@andrew.cmu.edu)
     Last Updated at:
-        Mar 27, 2023
+        Apr 1, 2023
 
     ---
 
@@ -25,7 +25,25 @@ import argparse
 SPECIAL_CASE_I = "\n[   TWIN FILE MISSING  ] Twin file ({}) does not exist."
 SPECIAL_CASE_II = "\n[    TWIN FILE DIFF    ] Twin file ({}) is not the same as {{}}."
 DELETED_MSG = "\n[ SUCCESSFULLY DELETED ] File ({}) has been deleted. Twin file ({}) is kept."
+DUPFILE_FORMAT = re.compile(r"^.+ 2(\.)?.*$")
+TWINFILE_FORMAT = re.compile(r"^(.+)( 2)(\.?)(.*)$")
 GLOBAL_COUNT = 0
+
+
+def obtain_twin_filepath(fp: str=''):
+    """
+        Obtain the filepath corresponding to the input duplicated filename.
+
+        Args:
+            fp: (str) filepath
+    """
+    new_fp = ''
+    m = re.match(TWINFILE_FORMAT, fp)
+    if m: new_fp += m.group(1) + m.group(3) + m.group(4)
+    return new_fp
+
+
+
 
 
 def clear_files_in_one_folder(folder: str):
@@ -37,13 +55,11 @@ def clear_files_in_one_folder(folder: str):
         for fp in full_fps:
             # skipping the I-don't-know-what-it-is file
             if fp.endswith('.icloud'): continue
-            if re.match(r"^.+ 2(\.)?.*$", fp):
-                # check if the corresponding original file exists
-                twin = re.sub(" 2\.", ".", fp)
-                if not os.path.exists(twin): print(SPECIAL_CASE_I.format(twin)); continue
-                elif not filecmp.cmp(fp, twin): print(SPECIAL_CASE_II.format(twin, fp)); continue
-                else: print(DELETED_MSG.format(fp, twin)); GLOBAL_COUNT += 1; os.remove(fp)
-            else: continue
+            twin = obtain_twin_filepath(fp)
+            # check if the corresponding original file exists
+            if not os.path.exists(twin): print(SPECIAL_CASE_I.format(twin)); continue
+            elif not filecmp.cmp(fp, twin): print(SPECIAL_CASE_II.format(twin, fp)); continue
+            else: print(DELETED_MSG.format(fp, twin)); GLOBAL_COUNT += 1; os.remove(fp)
     if dirs: clear_files_in_one_folder(dirs)
 
 
